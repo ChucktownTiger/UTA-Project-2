@@ -1,20 +1,20 @@
-const { Book } = require('../models');
+const { Website } = require('../models');
 
-const bookData = [
+const websiteData = [
   {
-    user_name: 'CodeLearner',
-    book_name: 'BootCamp Coding For Dummies',
-    book_idea: 'Book about how to choose and succeed in a coding bootcamp',
+    user_name: 'PickleballPro',
+    website_name: 'Pickleball Partners',
+    website_idea: 'Website to find people to play pickleball with in your area',
     submit_date: 'June 21, 2022 12:00:00'
   },
   {
     user_name: 'SuperBooks',
-    book_name: 'Frontline Ukraine',
-    book_idea: 'Story of a Super Hero saving Ukraine and defeating Putin',
+    book_name: 'Book Trader',
+    book_idea: 'Website to trade books amongst your neighbors',
     submit_date: 'June 21, 2022 12:00:00'
   },
 ];
 
-const seedBooks = () => Book.bulkCreate(bookData);
+const seedWebsites = () => Website.bulkCreate(websiteData);
 
-module.exports = seedBooks;
+module.exports = seedWebsites;
