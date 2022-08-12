@@ -1,8 +1,9 @@
-<section class="painting">
-  <img src="/images/{{painting.filename}}" alt="{{painting.description}}">
-  <div class="painting-details">
-    <h3>{{painting.title}}</h3>
-    <p>By: {{painting.artist}}</p>
-    <p>Exhibition open until: {{ format_date painting.exhibition_date}}</p>
+<section class="book">
+  <img src="/images/{{book.filename}}" alt="{{book.book_idea}}">
+  <div class="website-details">
+    <h3>{{book.book_name}}</h3>
+    <p>By: {{book.user_name}}</p>
+    <p>Description: {{book.book_idea}}</p>
+    <p>Idea submitted: {{ format_date book.submit_date}}</p>
   </div>
 </section>

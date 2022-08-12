@@ -1,8 +1,10 @@
-<section class="painting">
-  <img src="/images/{{painting.filename}}" alt="{{painting.description}}">
-  <div class="painting-details">
-    <h3>{{painting.title}}</h3>
-    <p>By: {{painting.artist}}</p>
-    <p>Exhibition open until: {{ format_date painting.exhibition_date}}</p>
+<section class="movie">
+  <img src="/images/{{movie.filename}}" alt="{{movie.movie_idea}}">
+  <div class="website-details">
+    <h3>{{movie.movie_name}}</h3>
+    <p>By: {{movie.user_name}}</p>
+    <p>Description: {{movie.move_idea}}</p>
+    <p>Idea submitted: {{ format_date movie.submit_date}}</p>
   </div>
 </section>
+
