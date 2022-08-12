@@ -1,9 +1,9 @@
 <section class="book">
-  <img src="/images/{{book.filename}}" alt="{{book.book_idea}}">
+  <img src="/images/{{Book.filename}}" alt="{{Book.book_idea}}">
   <div class="website-details">
-    <h3>{{book.book_name}}</h3>
-    <p>By: {{book.user_name}}</p>
-    <p>Description: {{book.book_idea}}</p>
-    <p>Idea submitted: {{ format_date book.submit_date}}</p>
+    <h3>{{Book.book_name}}</h3>
+    <p>By: {{Book.user_name}}</p>
+    <p>Description: {{Book.book_idea}}</p>
+    <p>Idea submitted: {{ format_date Book.submit_date}}</p>
   </div>
 </section>
