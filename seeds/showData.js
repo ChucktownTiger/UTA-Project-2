@@ -1,7 +1,7 @@
 // const where the model will be required
 const { Show } = require('../models')
 
-const showdata = [
+const showData = [
     {
         // this is an actual show 
         title: 'Succession',
@@ -26,6 +26,6 @@ const showdata = [
     }
 ];
 
-const seedShows = () => Show.bulkCreate(showdata);
+const seedShows = () => Show.bulkCreate(showData);
 
 module.exports = seedShows;

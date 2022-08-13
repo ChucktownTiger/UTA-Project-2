@@ -1,7 +1,7 @@
 // const where model is to be required
 const { Movie } = require('../models')
 
-const moviedata = [
+const movieData = [
     {
         title: 'Here And Not',
         creator: 'Isaias',
@@ -25,6 +25,6 @@ const moviedata = [
     }
 ];
 
-const seedMovies = () => Movie.bulkCreate(moviedata);
+const seedMovies = () => Movie.bulkCreate(movieData);
 
 module.exports = seedMovies;
