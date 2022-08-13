@@ -9,8 +9,8 @@ const websiteData = [
   },
   {
     user_name: 'SuperBooks',
-    book_name: 'Book Trader',
-    book_idea: 'Website to trade books amongst your neighbors',
+    website_name: 'Book Trader',
+    website_idea: 'Website to trade books amongst your neighbors',
     submit_date: 'June 21, 2022 12:00:00'
   },
 ];
