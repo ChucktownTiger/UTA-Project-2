@@ -18,7 +18,16 @@
     "express-handlebars": "^5.2.0",
     "express-session": "^1.17.1",
     "handlebars": "^4.7.6",
+    "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChucktownTiger/UTA-Project-2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChucktownTiger/UTA-Project-2/issues"
+  },
+  "homepage": "https://github.com/ChucktownTiger/UTA-Project-2#readme"
 }
