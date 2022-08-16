@@ -1,6 +1,16 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
+// find all users logic?
+router.get('/', (req, res) => {
+  User.findAll()
+  .then(dbUserData => res.json(dbUserData))
+  .catch(err => {
+    console.log(err)
+    res.status(500).json(err);
+  })
+});
+
 // CREATE new user
 router.post('/signup', async (req, res) => {
   try {
@@ -33,7 +43,7 @@ router.post('/login', async (req, res) => {
     if (!dbUserData) {
       res
         .status(400)
-        .json({ message: 'Incorrect email or password. Please try again!' });
+        .json({ message: 'Incorrect email. Please try again!' });
       return;
     }
 
@@ -42,7 +52,7 @@ router.post('/login', async (req, res) => {
     if (!validPassword) {
       res
         .status(400)
-        .json({ message: 'Incorrect email or password. Please try again!' });
+        .json({ message: 'Incorrect password. Please try again!' });
       return;
     }
 
