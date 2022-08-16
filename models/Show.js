@@ -27,15 +27,7 @@ Show.init(
         description: {
             type: DataTypes.STRING,
             allowNull: false
-        },
-        showpost_id: {
-            type: DataTypes.STRING,
-            // not sure if this below would be correct
-            references: {
-                model: 'show',
-                key: 'id'
-            }
-        },
+        }
     },
     {
         sequelize,

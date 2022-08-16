@@ -26,7 +26,7 @@ Book.init(
     submit_date: {
       type: DataTypes.DATE,
       allowNull: false
-    },
+    }
   },
   {
     sequelize,

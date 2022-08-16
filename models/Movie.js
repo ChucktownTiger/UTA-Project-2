@@ -26,15 +26,7 @@ Movie.init(
         description: {
             type: DataTypes.STRING,
             allowNull: false
-        },
-        // unsure 
-        moviepost_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'movie',
-                key: 'id'
-            }
-        },
+        }
     },
     {
         sequelize,
