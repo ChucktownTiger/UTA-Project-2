@@ -339,6 +339,11 @@ router.post('/new_website_idea', async (req, res) => {
   }
 });
 
+/*  --------------
+      GET LOGIN
+    --------------
+*/
+
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');

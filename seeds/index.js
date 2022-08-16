@@ -3,6 +3,7 @@ const seedBooks = require('./bookData');
 const seedMovies = require('./movieData');
 const seedShows = require('./showData');
 const seedWebsites = require('./websiteData');
+const seedUsers = require('./userData');
 
 const seedAll = async () => {
   await sequelize.sync({ force: true });
@@ -13,7 +14,9 @@ const seedAll = async () => {
 
   await seedWebsites();
 
-  await seedMovies();
+  await seedMovies();  
+  
+  await seedUsers();
 
   process.exit(0);
 };
