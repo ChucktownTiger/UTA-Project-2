@@ -10,7 +10,7 @@ Show.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true,
+            autoIncrement: true
         },
         title: {
             type: DataTypes.STRING,
@@ -33,8 +33,8 @@ Show.init(
             // not sure if this below would be correct
             references: {
                 model: 'show',
-                key: 'id',
-            },
+                key: 'id'
+            }
         },
     },
     {

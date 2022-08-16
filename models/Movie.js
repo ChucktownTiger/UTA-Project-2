@@ -13,7 +13,7 @@ Movie.init(
         },
         title: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false
         },
         creator: {
             type: DataTypes.STRING,
@@ -32,8 +32,8 @@ Movie.init(
             type: DataTypes.INTEGER,
             references: {
                 model: 'movie',
-                key: 'id',
-            },
+                key: 'id'
+            }
         },
     },
     {

@@ -9,30 +9,30 @@ Book.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
+      autoIncrement: true
     },
     user_name: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     book_name: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     book_idea: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     submit_date: {
       type: DataTypes.DATE,
-      allowNull: false,
+      allowNull: false
     },
   },
   {
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Book',
+    modelName: 'Book'
   }
 );
 

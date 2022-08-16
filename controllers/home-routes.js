@@ -24,7 +24,7 @@ router.get('/book', async (req, res) => {
       book.get({ plain: true })
     );
 
-    res.render('homepage', {
+    res.render('book', {
       book,
       loggedIn: req.session.loggedIn,
     });
@@ -104,7 +104,7 @@ router.get('/movie', async (req, res) => {
       movie.get({ plain: true })
     );
 
-    res.render('homepage', {
+    res.render('movie', {
       movie,
       loggedIn: req.session.loggedIn,
     });
@@ -184,7 +184,7 @@ router.get('/show', async (req, res) => {
       show.get({ plain: true })
     );
 
-    res.render('homepage', {
+    res.render('show', {
       show,
       loggedIn: req.session.loggedIn,
     });
@@ -264,7 +264,7 @@ router.get('/website', async (req, res) => {
       website.get({ plain: true })
     );
 
-    res.render('homepage', {
+    res.render('website', {
       website,
       loggedIn: req.session.loggedIn,
     });

@@ -9,30 +9,30 @@ Website.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
+      autoIncrement: true
     },
     user_name: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     website_name: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     website_idea: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     submit_date: {
       type: DataTypes.DATE,
-      allowNull: false,
+      allowNull: false
     },
   },
   {
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Website',
+    modelName: 'Website'
   }
 );
 
