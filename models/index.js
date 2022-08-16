@@ -1,7 +1,7 @@
 const User = require('./User');
 const Book = require('./Book');
 const Movie = require('./Movie');
-const Show = require('./Show');
+const Show = require('./TVShow');
 const Website = require('./Website');
 
 

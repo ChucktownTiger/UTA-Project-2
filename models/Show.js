@@ -33,7 +33,7 @@ Show.init(
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'show'
+        modelName: 'tvshow'
     }
 );
 
