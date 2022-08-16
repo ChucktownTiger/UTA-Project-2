@@ -3,6 +3,22 @@ const { Movie, Book, Show, Website, Idea } = require('../models');
 // Import the custom middleware
 const withAuth = require('../utils/auth');
 
+/*  -------------
+      HOMEPAGE
+    ------------- 
+*/
+
+// GET homepage
+router.get('/', async (req, res) => {
+    res.render('homepage', {
+      Book,
+      Movie,
+      Show,
+      Website,
+      loggedIn: req.session.loggedIn,
+    });
+  });
+
 /*  ---------------
         BOOKS
     --------------- 
@@ -14,7 +30,7 @@ router.get('/book', async (req, res) => {
     const dbBookData = await Book.findAll({
       include: [
         {
-          model: Idea,
+          model: Book,
           attributes: ['book_name', 'book_idea'],
         },
       ],
