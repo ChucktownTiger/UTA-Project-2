@@ -10,6 +10,8 @@ const seedAll = async () => {
 
   await seedBooks();
 
+  await seedUsers();
+
   await seedShows();
 
   await seedWebsites();
