@@ -11,11 +11,11 @@ Movie.init(
             primaryKey: true,
             autoIncrement: true //(?)
         },
-        movie_name: {
+        user_name: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        user_name: {
+        movie_name: {
             type: DataTypes.STRING,
             allowNull: false
         },

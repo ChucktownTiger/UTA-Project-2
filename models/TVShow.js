@@ -2,9 +2,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Show extends Model {}
+class TVShow extends Model {}
 
-Show.init(
+TVShow.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -12,15 +12,15 @@ Show.init(
             primaryKey: true,
             autoIncrement: true
         },
-        show_name: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
         user_name: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        show_idea: {
+        tvshow_name: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        tvshow_idea: {
             type: DataTypes.STRING,
             allowNull: false
         },
@@ -37,4 +37,4 @@ Show.init(
     }
 );
 
-module.exports = Show;
+module.exports = TVShow;

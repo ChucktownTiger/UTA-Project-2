@@ -1,7 +1,7 @@
 const sequelize = require('../config/connection');
 const seedBooks = require('./bookData');
 const seedMovies = require('./movieData');
-const seedShows = require('./showData');
+const seedTVShows = require('./showData');
 const seedWebsites = require('./websiteData');
 
 const seedAll = async () => {
@@ -9,7 +9,7 @@ const seedAll = async () => {
 
   await seedBooks();
 
-  await seedShows();
+  await seedTVShows();
 
   await seedWebsites();
 
