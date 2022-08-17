@@ -57,7 +57,7 @@ router.get('/book/:id', withAuth, async (req, res) => {
     const dbBookData = await Book.findByPk(req.params.id, {
       include: [
         {
-          model: Idea,
+          model: Book,
           attributes: [
             'id',
             'book_name',
