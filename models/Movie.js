@@ -11,22 +11,22 @@ Movie.init(
             primaryKey: true,
             autoIncrement: true //(?)
         },
-        title: {
+        movie_name: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        creator: {
+        user_name: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        photo_file: {
+        movie_idea: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        description: {
-            type: DataTypes.STRING,
+        submit_date: {
+            type: DataTypes.DATE,
             allowNull: false
-        }
+        },
     },
     {
         sequelize,

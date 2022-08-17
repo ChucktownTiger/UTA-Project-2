@@ -12,22 +12,22 @@ Show.init(
             primaryKey: true,
             autoIncrement: true
         },
-        title: {
+        show_name: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        creator: {
+        user_name: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        photo_file: { 
+        show_idea: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        description: {
-            type: DataTypes.STRING,
+        submit_date: {
+            type: DataTypes.DATE,
             allowNull: false
-        }
+        },
     },
     {
         sequelize,
