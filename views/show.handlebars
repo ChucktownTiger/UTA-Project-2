@@ -1,11 +1,10 @@
 <section class="show">
-  <!-- need image here? -->
-  <img src="/images/{{TVShow.filename}}" alt="{{TVShow.tvshow_idea}}">
-  <div class="show-details">
-    <h3>{{TVShow.tvshow_name}}</h3>
-    <p>By: {{TVShow.user_name}}</p>
-    <p>Description: {{TVShow.tvshow_idea}}</p>
-    <p>Idea submitted on: {{ format_date TVShow.submit_date}}</p>
+  <img src="/images/{{Show.filename}}" alt="{{Show.description}}">
+  <div class="website-details">
+    <h3>{{Show.show_name}}</h3>
+    <p>By: {{Show.user_name}}</p>
+    <p>Description: {{Show.show_idea}}</p>
+    <p>Idea submitted: {{ format_date Show.submit_date}}</p>
   </div>
 </section>
 

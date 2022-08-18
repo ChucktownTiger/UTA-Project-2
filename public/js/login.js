@@ -5,17 +5,16 @@ const loginFormHandler = async (event) => {
   const password = document.querySelector('#password-login').value.trim();
 
   if (email && password) {
-    const response = await fetch('/api/users/login', {
+    const response = fetch('/api/users/login/', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
       headers: { 'Content-Type': 'application/json' },
-    });
+    })
 
-    if (response.ok) {
+    .then(function() {
       document.location.replace('/');
-    } else {
-      alert('Failed to log in.');
-    }
+    }) .catch(err => console.log(err));
+
   }
 };
 
@@ -27,7 +26,7 @@ const signupFormHandler = async (event) => {
   const password = document.querySelector('#password-signup').value.trim();
 
   if (username && email && password) {
-    const response = await fetch('/api/users', {
+    const response = await fetch('/api/users/', {
       method: 'POST',
       body: JSON.stringify({ username, email, password }),
       headers: { 'Content-Type': 'application/json' },

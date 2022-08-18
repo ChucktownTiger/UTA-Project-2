@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Movie, Book, TVShow, Website, Idea } = require('../models');
+const { Movie, Book, Show, Website, User } = require('../models');
 // Import the custom middleware
 const withAuth = require('../utils/auth');
 
@@ -57,7 +57,7 @@ router.get('/book/:id', withAuth, async (req, res) => {
     const dbBookData = await Book.findByPk(req.params.id, {
       include: [
         {
-          model: Idea,
+          model: Book,
           attributes: [
             'id',
             'book_name',
