@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Movie, Book, Show, Website, User } = require('../models');
+const { Movie, Book, TVShow, Website, User } = require('../models');
 // Import the custom middleware
 const withAuth = require('../utils/auth');
 
@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
     res.render('homepage', {
       Book,
       Movie,
-      Show,
+      TVShow,
       Website,
       loggedIn: req.session.loggedIn,
     });
@@ -187,11 +187,11 @@ router.post('/new_movie_idea', async (req, res) => {
 // GET the shows page
 router.get('/show', async (req, res) => {
   try {
-    const dbShowData = await Show.findAll({
+    const dbShowData = await TVShow.findAll({
       include: [
         {
           model: Idea,
-          attributes: ['show_name', 'show_idea'],
+          attributes: ['tvshow_name', 'tvshow_idea'],
         },
       ],
     });
@@ -211,20 +211,20 @@ router.get('/show', async (req, res) => {
 });
 
 // GET show
-// Use the custom middleware before allowing the user to access the books page
+// Use the custom middleware before allowing the user to access the tv shows page
 router.get('/show/:id', withAuth, async (req, res) => {
   try {
-    const dbShowData = await Show.findByPk(req.params.id, {
+    const dbShowData = await TVShow.findByPk(req.params.id, {
       include: [
         {
           model: Idea,
           attributes: [
             'id',
-            'show_name',
+            'tvshow_name',
             'user_name',
             'submit_date',
             'img_name',
-            'show_idea',
+            'tvshow_idea',
           ],
         },
       ],
@@ -243,8 +243,8 @@ router.post('/new_show_idea', async (req, res) => {
   try {
     const dbShowData = await NewShowIdea.create({
       user_name: req.body.user_name,
-      show_name: req.body.show_name,
-      show_idea: req.body.show_idea,
+      tvshow_name: req.body.tvshow_name,
+      tvshow_idea: req.body.tvshow_idea,
       submit_date: req.body.submit_date
     });
 
@@ -291,7 +291,7 @@ router.get('/website', async (req, res) => {
 });
 
 // GET website
-// Use the custom middleware before allowing the user to access the books page
+// Use the custom middleware before allowing the user to access the websites page
 router.get('/website/:id', withAuth, async (req, res) => {
   try {
     const dbWebsiteData = await Website.findByPk(req.params.id, {
