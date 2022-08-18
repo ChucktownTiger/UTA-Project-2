@@ -2,9 +2,7 @@
   <a href="website-idea.handlebars">Submit New Website!</a>
   <img src="../public/images/WebsitePH.png" alt="{{Website.description}}">
   <div class="website-details">
-    <h3>{{Website.website_name}}</h3>
-    <p>By: {{Website.user_name}}</p>
-    <p>Description: {{Website.website_idea}}</p>
-    <p>Idea submitted: {{ format_date Website.submit_date}}</p>
+    <!-- adding website-details partial -->
+    {{>website-details}}
   </div>
 </section>
