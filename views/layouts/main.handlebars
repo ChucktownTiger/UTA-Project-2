@@ -11,27 +11,27 @@
 
 <body>
   <header>
-    <h1>View the ideas the world has to offer!</h1>
+    <h1 class="title">Lightbulb</h1>
+    <h2>View the ideas the world has to offer!</h2>
     <nav>
-      <a href="/">Home</a>
       {{#if loggedIn}}
       <button id="logout" class="btn-no-style">Logout</button>
       <button id="account" class="btn-no-style">Account</button>
       {{else}}
-      <a href="/login">Login</a>
+      <a href="/login">Login/Signup</a>
       {{/if}}
     </nav>
   </header>
 
     <main>
       <section>
-        <h2 class="mb-0 mt-4 justify-content-center d-flex">MOVIES</h2>
-        <div class="container-fluid m-6 justify-content-center d-flex">
+        <h2 class="mb-0 mt-4 justify-content-center d-flex col-12"><a href="#">MOVIES</a></h2>
+        <div class="container-fluid justify-content-center d-flex">
           <div class="row justify-content-center m-1 d-flex flex-wrap">
-            <div class="card col-xl-3" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -42,10 +42,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -56,10 +56,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -70,10 +70,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -84,25 +84,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Card title</h5>
-                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
-                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -114,10 +99,10 @@
               </div>
             </div>
 
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -129,10 +114,13 @@
               </div>
             </div>
 
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
+        <h2 class="mb-0 mt-4 justify-content-center d-flex col-12"><a href="#">SHOWS</a></h2>
+        <div class="container-fluid justify-content-center d-flex">
+          <div class="row justify-content-center m-1 d-flex flex-wrap">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -143,16 +131,10 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <h2 class="mb-0 mt-4 justify-content-center d-flex">SHOWS</h2>
-        <div class="container-fluid m-6 justify-content-center d-flex w-100">
-          <div class="row justify-content-between d-flex flex-wrap w-75">
-            <div class="card col-xl-3" style="max-width: 540px;">
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -163,10 +145,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -177,10 +159,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -191,24 +173,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Card title</h5>
-                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
-                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -220,10 +188,10 @@
               </div>
             </div>
 
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -235,10 +203,69 @@
               </div>
             </div>
 
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
+        <h2 class="mb-0 mt-4 justify-content-center d-flex col-12"><a href="#">BOOKS</a></h2>
+        <div class="container-fluid justify-content-center d-flex">
+          <div class="row justify-content-center m-1 d-flex flex-wrap">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -250,86 +277,10 @@
               </div>
             </div>
 
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Card title</h5>
-                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
-                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <h2 class="mb-0 mt-4 justify-content-center d-flex">BOOKS</h2>
-        <div class="container-fluid m-6 justify-content-center d-flex w-100">
-          <div class="row justify-content-between d-flex flex-wrap w-75">
-            <div class="card col-xl-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Card title</h5>
-                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
-                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Card title</h5>
-                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
-                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Card title</h5>
-                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
-                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Card title</h5>
-                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
-                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -341,10 +292,69 @@
               </div>
             </div>
 
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
+        <h2 class="mb-0 mt-4 justify-content-center d-flex col-12"><a href="#">WEBSITES</a></h2>
+        <div class="container-fluid justify-content-center d-flex">
+          <div class="row justify-content-center m-1 d-flex flex-wrap">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -356,10 +366,10 @@
               </div>
             </div>
 
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
+            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
+                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -371,143 +381,6 @@
               </div>
             </div>
 
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Card title</h5>
-                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
-                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-                <h2 class="mb-0 mt-4 justify-content-center d-flex">WEBSITES</h2>
-        <div class="container-fluid m-6 justify-content-center d-flex w-100">
-          <div class="row justify-content-between d-flex flex-wrap w-75">
-            <div class="card col-xl-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Card title</h5>
-                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
-                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Card title</h5>
-                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
-                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Card title</h5>
-                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
-                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Card title</h5>
-                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
-                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Card title</h5>
-                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
-                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Card title</h5>
-                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
-                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Card title</h5>
-                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
-                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mb-3 col-xl-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="#" class="card-img" alt="#">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Card title</h5>
-                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
-                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
     <div class="ideas-home">
