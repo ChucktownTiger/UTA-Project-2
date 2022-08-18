@@ -10,11 +10,9 @@ const loginFormHandler = async (event) => {
       body: JSON.stringify({ email, password }),
       headers: { 'Content-Type': 'application/json' },
     })
-
     .then(function() {
       document.location.replace('/');
     }) .catch(err => console.log(err));
-
   }
 };
 

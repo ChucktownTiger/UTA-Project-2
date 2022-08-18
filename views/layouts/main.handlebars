@@ -11,21 +11,505 @@
 
 <body>
   <header>
-    <h1>Share Your Ideas With Lightbulb</h1>
+    <h1>View the ideas the world has to offer!</h1>
+    <nav>
+      <a href="/">Home</a>
+      {{#if loggedIn}}
+      <button id="logout" class="btn-no-style">Logout</button>
+      <button id="account" class="btn-no-style">Account</button>
+      {{else}}
+      <a href="/login">Login</a>
+      {{/if}}
+    </nav>
   </header>
-  <nav>
-    <a href="/">Home</a>
-    {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
-    <button id="account" class="btn-no-style">Account</button>
-    {{else}}
-    <a href="/login">Login</a>
-    {{/if}}
-  </nav>
-  <main>
-    <aside>
-      <h2>View the ideas the world has to offer!</h2>
-    </aside>
+
+    <main>
+      <section>
+        <h2 class="mb-0 mt-4 justify-content-center d-flex">MOVIES</h2>
+        <div class="container-fluid m-6 justify-content-center d-flex w-100">
+          <div class="row justify-content-between d-flex flex-wrap w-75">
+            <div class="card col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="mb-0 mt-4 justify-content-center d-flex">SHOWS</h2>
+        <div class="container-fluid m-6 justify-content-center d-flex w-100">
+          <div class="row justify-content-between d-flex flex-wrap w-75">
+            <div class="card col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="mb-0 mt-4 justify-content-center d-flex">BOOKS</h2>
+        <div class="container-fluid m-6 justify-content-center d-flex w-100">
+          <div class="row justify-content-between d-flex flex-wrap w-75">
+            <div class="card col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                <h2 class="mb-0 mt-4 justify-content-center d-flex">WEBSITES</h2>
+        <div class="container-fluid m-6 justify-content-center d-flex w-100">
+          <div class="row justify-content-between d-flex flex-wrap w-75">
+            <div class="card col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 col-xl-3" style="max-width: 640px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Card title</h5>
+                    <div class="small"><p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div>
+                    <p class="card-text small"><small class="text-muted">Author: Username</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     <div class="ideas-home">
       {{{body}}}
     </div>
