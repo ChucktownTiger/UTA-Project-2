@@ -21,7 +21,7 @@ const websiteIdeaFormHandler = async (event) => {
     }
 };
 
-const showIdeaFormHandler = async (event) => {
+const tvshowIdeaFormHandler = async (event) => {
     event.preventDefault();
 
     const tvshow_name = document.querySelector('#tvshow_name').value.trim();
@@ -37,7 +37,7 @@ const showIdeaFormHandler = async (event) => {
     });
 
     if (response.ok) {
-        document.location.replace('/user');
+        document.location.replace('/tvshow');
     } else {
         alert('Failed to create Idea.');
     }
@@ -60,7 +60,7 @@ const movieIdeaFormHandler = async (event) => {
     });
 
     if (response.ok) {
-        document.location.replace('/user');
+        document.location.replace('/movie');
     } else {
         alert('Failed to create Idea.');
     }
@@ -82,7 +82,7 @@ const bookIdeaFormHandler = async (event) => {
     });
 
     if (response.ok) {
-        document.location.replace('/user');
+        document.location.replace('/book');
     } else {
         alert('Failed to create Idea.');
     }

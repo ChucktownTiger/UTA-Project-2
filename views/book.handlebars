@@ -1,10 +1,8 @@
 <section class="book">
-  <!-- need image here? -->
-  <img src="/images/{{Book.filename}}" alt="{{Book.book_idea}}">
-  <div class="website-details">
-    <h3>{{Book.book_name}}</h3>
-    <p>By: {{Book.user_name}}</p>
-    <p>Description: {{Book.book_idea}}</p>
-    <p>Idea submitted on: {{ format_date Book.submit_date}}</p>
+  <a href="book-idea.handlebars">Submit New Book!</a>
+  <img src="../public/images/BookPH.png" alt="{{Book.book_idea}}">
+  <div class="book-details">
+    <!-- adding in book-details partial card here  -->
+    {{>book-details}}
   </div>
 </section>

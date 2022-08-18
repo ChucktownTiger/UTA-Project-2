@@ -1,9 +1,11 @@
 <!-- updated the  -->
 <section class="card">
   <a href="/movie/{{id}}">
-    <header>{{movie_name}}</header>
-    <p>{{movie_idea}}</p>
-    <h3>By: {{Movie.user_name}}</h3>
-    
+    <header>{{Movie.movie_name}}</header>
+    <div class="card-body">
+      <h3>By: {{Movie.user_name}} </h3>
+      <p>Description: {{Movie.movie_idea}} </p>
+      <p>Idea Submitted: {{ format_date Movie.submit_date }} </p>
+    </div>
   </a>
 </section>

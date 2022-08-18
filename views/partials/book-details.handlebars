@@ -1,8 +1,10 @@
 <section class="card">
   <a href="/book/{{id}}">
-    <header>{{book_name}}</header>
-    <p>{{book_idea}}</p>
-    <h3>By: {{Book.user_name}}</h3>
-    
+    <header>{{Book.book_name}}</header>
+    <div class="card-body">
+      <h3>By: {{Book.user_name}} </h3>
+      <p>Description: {{Book.book_idea}} </p>
+      <p>Idea Submitted: {{ format_date Book.submit_date }} </p>
+    </div>
   </a>
 </section>

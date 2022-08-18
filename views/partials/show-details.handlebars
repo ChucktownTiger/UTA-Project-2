@@ -1,8 +1,10 @@
 <section class="card">
   <a href="/show/{{id}}">
-    <header>{{tvshow_name}}</header>
-    <p>{{tvshow_idea}}</p>
-    <h3>By: {{TVShow.user_name}}</h3>
-    
+    <header>{{TVShow.tvshow_name}}</header>
+    <div class="card-body">
+      <h3>By: {{TVShow.user_name}} </h3>
+      <p>Description: {{TVShow.tvshow_idea}} </p>
+      <p>Idea Submitted: {{ format_date TVShow.submit_date }} </p>
+    </div>
   </a>
 </section>

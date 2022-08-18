@@ -1,8 +1,10 @@
 <section class="card">
   <a href="/website/{{id}}">
-    <header>{{website_name}}</header>
-    <p>{{website_idea}}</p>
-    <h3>By: {{Website.user_name}}</h3>
-    
+    <header>{{Website.website_name}}</header>
+    <div class="card-body">
+      <h3>By: {{Website.user_name}} </h3>
+      <p>Description: {{Website.website_idea}} </p>
+      <p>Idea Submitted: {{ format_date Website.submit_date }} </p>
+    </div>
   </a>
 </section>

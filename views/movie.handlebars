@@ -1,11 +1,9 @@
 <section class="movie">
-  <!-- need image here? -->
-  <img src="/images/{{Movie.filename}}" alt="{{Movie.movie_idea}}">
+  <a href="movie-idea.handlebars">Submit New Movie!</a>
+  <img src="../public/images/MoviePH.png" alt="{{Movie.movie_idea}}">
   <div class="movie-details">
-    <h3>{{Movie.movie_name}}</h3>
-    <p>By: {{Movie.user_name}}</p>
-    <p>Description: {{Movie.move_idea}}</p>
-    <p>Idea submitted on: {{ format_date Movie.submit_date}}</p>
+    <!-- adding in movie-details partial here -->
+    {{>movie-details}}
   </div>
 </section>
 
