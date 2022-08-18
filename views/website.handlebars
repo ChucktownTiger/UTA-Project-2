@@ -1,9 +1,10 @@
 <section class="website">
-  <img src="/images/{{Website.filename}}" alt="{{Website.description}}">
+  <!-- need image here? -->
+  <img src="/images/{{Website.filename}}" alt="{{Website.website_idea}}">
   <div class="website-details">
     <h3>{{Website.website_name}}</h3>
     <p>By: {{Website.user_name}}</p>
     <p>Description: {{Website.website_idea}}</p>
-    <p>Idea submitted: {{ format_date Website.submit_date}}</p>
+    <p>Idea submitted on: {{ format_date Website.submit_date}}</p>
   </div>
 </section>

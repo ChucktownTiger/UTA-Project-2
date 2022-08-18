@@ -1,10 +1,11 @@
 <section class="movie">
+  <!-- need image here? -->
   <img src="/images/{{Movie.filename}}" alt="{{Movie.movie_idea}}">
-  <div class="website-details">
+  <div class="movie-details">
     <h3>{{Movie.movie_name}}</h3>
     <p>By: {{Movie.user_name}}</p>
     <p>Description: {{Movie.move_idea}}</p>
-    <p>Idea submitted: {{ format_date Movie.submit_date}}</p>
+    <p>Idea submitted on: {{ format_date Movie.submit_date}}</p>
   </div>
 </section>
 
