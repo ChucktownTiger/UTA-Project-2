@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3002;
 module.exports = {
   HOST: "us-cdbr-east-06.cleardb.net",
   USER: "baa585d05c4291",
-  PASSWORD: "37287aec@",
+  PASSWORD: "37287aec",
   DB: "heroku_ab8a7fa9c151819"
 };
 
