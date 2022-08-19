@@ -185,12 +185,12 @@ router.post('/new_movie_idea', async (req, res) => {
 */
 
 // GET the shows page
-router.get('/show', async (req, res) => {
+router.get('/tvshow', async (req, res) => {
   try {
     const dbShowData = await TVShow.findAll({
       include: [
         {
-          model: Idea,
+          model: TVShow,
           attributes: ['tvshow_name', 'tvshow_idea'],
         },
       ],
