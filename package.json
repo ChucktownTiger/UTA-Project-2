@@ -22,6 +22,10 @@
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
   },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ChucktownTiger/UTA-Project-2.git"
