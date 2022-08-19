@@ -21,5 +21,5 @@ https://github.com/ChucktownTiger/UTA-Project-2
 
 ## Contributors
 - Shauna Lachelier https://github.com/SLachelier
-- Todd Holley https://github.com/jorguzman100
+- Todd Holley https://github.com/ChucktownTiger
 - Isaias Moraza https://github.com/mrza1127
