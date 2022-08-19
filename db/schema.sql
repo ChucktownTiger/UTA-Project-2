@@ -2,7 +2,4 @@ DROP DATABASE IF EXISTS lightbulb_db;
 
 CREATE DATABASE lightbulb_db;
 
-DROP DATABASE IF EXISTS kgbw6d4abn4gb1zg;
-CREATE DATABASE kgbw6d4abn4gb1zg;
-
 SELECT * FROM Users;
