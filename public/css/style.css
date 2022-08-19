@@ -26,22 +26,9 @@ body {
   background-color: var(--quatrinary);
 }
 
-a {
-  color: var(--tertiary);
-  text-decoration: none;
-  justify-content: end;
+.initial-forms {
+  background-color: var(--primary);
 }
-
-a:hover {
-  text-decoration: none;
-  color:#498467;
-  transition: 0.2s ease-in-out;
-}
-
-a:visited {
-  color: inherit;
-}
-
 header {
   padding: 40px;
   text-align: center;
@@ -79,12 +66,25 @@ nav a {
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
+  font-weight: 300;
 }
 
 nav a:hover {
+  text-decoration: none;
   color: var(--tertiary);
   background-color: var(--dark);
     border-radius: 10px;
+}
+
+.categories {
+  text-decoration: none;
+  color: #FFF689;
+}
+
+.categories:hover {
+  text-decoration: none;
+  color:#498467;
+  transition: 0.2s ease-in-out;
 }
 
 .gallery {
@@ -136,17 +136,12 @@ img {
 }
 
 .login-card {
-  margin: 0 0 20px 0;
-  /* width: auto; */
-  /* height: auto; */
-  /* flex: 0 0 50%; */
-  /* max-width: 50%; */
+  /* margin: 0 0 20px 0; */
   padding: 5px;
-  border: 3px solid var(--dark);
-  border-radius: var(--border-radius);
-  border-style: double;
-  border-width: thick;
-  background-color: #577a7c;
+  /* border-radius: var(--border-radius); */
+  margin: 0;
+  width: 100%;
+  background-color: var(--primary);
   color: var(--light);
 }
 
@@ -160,6 +155,10 @@ img {
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
 }
 
+.word-logo {
+  max-width: 400px;
+  position: left top;
+}
 .card-body {
   font-size: 1.4rem;
   text-align: center;
@@ -184,3 +183,19 @@ img {
   align-content: flex-start;
   align-items: center;
 }
+
+.forms-size {
+  margin: 0;
+}
+
+.btn-yellow {
+  background-color: var(--tertiary);
+}
+
+.btn-yellow:hover {
+  background-color: var(--secondary);
+  transition: 0.2s ease-in-out;
+
+}
+
+
