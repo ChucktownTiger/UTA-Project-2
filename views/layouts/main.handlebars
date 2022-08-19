@@ -10,8 +10,10 @@
 </head>
 
 <body>
-  <header>
-    <h1 class="title">Lightbulb</h1>
+  <header class="d-flexjustify-content-start">
+    <img src="/images/wordlogoOff.png" class="word-logo"
+      onmouseover="this.src='/images/wordlogoOn.png';"
+      onmouseout="this.src='/images/wordlogoOff.png';">
     <h2>View the ideas the world has to offer!</h2>
     <nav>
       {{#if loggedIn}}
@@ -22,16 +24,18 @@
       {{/if}}
     </nav>
   </header>
-
+      <div class="">
+      {{{body}}}
+    </div>
     <main>
       <section>
-        <h2 class="mb-0 mt-4 justify-content-center d-flex col-12"><a href="#">MOVIES</a></h2>
+        <h2 class="mb-0 mt-4 justify-content-center d-flex col-12"><a href="movie" class="categories">MOVIES</a></h2>
         <div class="container-fluid justify-content-center d-flex">
           <div class="row justify-content-center m-1 d-flex flex-wrap">
             <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -42,10 +46,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -56,10 +60,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -70,10 +74,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -84,10 +88,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -99,10 +103,10 @@
               </div>
             </div>
 
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -114,13 +118,13 @@
               </div>
             </div>
 
-        <h2 class="mb-0 mt-4 justify-content-center d-flex col-12"><a href="#">SHOWS</a></h2>
+        <h2 class="mb-0 mt-4 justify-content-center d-flex col-12"><a href="show" class="categories">SHOWS</a></h2>
         <div class="container-fluid justify-content-center d-flex">
           <div class="row justify-content-center m-1 d-flex flex-wrap">
             <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/ShowPH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -131,10 +135,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/ShowPH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -145,10 +149,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/ShowPH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -159,10 +163,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/ShowPH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -173,10 +177,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/ShowPH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -188,10 +192,10 @@
               </div>
             </div>
 
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/ShowPH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -203,13 +207,13 @@
               </div>
             </div>
 
-        <h2 class="mb-0 mt-4 justify-content-center d-flex col-12"><a href="#">BOOKS</a></h2>
+        <h2 class="mb-0 mt-4 justify-content-center d-flex col-12"><a href="book" class="categories">BOOKS</a></h2>
         <div class="container-fluid justify-content-center d-flex">
           <div class="row justify-content-center m-1 d-flex flex-wrap">
             <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/BookPH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -220,10 +224,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/BookPH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -234,10 +238,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/BookPH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -248,10 +252,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/BookPH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -262,10 +266,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/BookPH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -277,10 +281,10 @@
               </div>
             </div>
 
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/BookPH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -292,13 +296,13 @@
               </div>
             </div>
 
-        <h2 class="mb-0 mt-4 justify-content-center d-flex col-12"><a href="#">WEBSITES</a></h2>
+        <h2 class="mb-0 mt-4 justify-content-center d-flex col-12"><a href="website" class="categories">WEBSITES</a></h2>
         <div class="container-fluid justify-content-center d-flex">
           <div class="row justify-content-center m-1 d-flex flex-wrap">
             <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/WebsitePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -309,10 +313,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/WebsitePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -323,10 +327,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/WebsitePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -337,10 +341,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/WebsitePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -351,10 +355,10 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/WebsitePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -366,10 +370,10 @@
               </div>
             </div>
 
-            <div class="card mb-3 col-xl-4 p-0 border-0" style="max-width: 540px;">
+            <div class="card col-xl-4 p-0 border-0" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="../../public/images/MoviePH.png" class="card-img" alt="Movie Cover Placeholder">
+                  <img src="/images/WebsitePH.png" class="card-img" alt="Movie Cover Placeholder">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -383,9 +387,7 @@
 
       </section>
 
-    <div class="ideas-home">
-      {{{body}}}
-    </div>
+
   </main>
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
