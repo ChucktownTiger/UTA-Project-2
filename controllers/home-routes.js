@@ -190,7 +190,7 @@ router.get('/tvshow', async (req, res) => {
     const dbShowData = await TVShow.findAll({
       include: [
         {
-          model: Idea,
+          model: TVShow,
           attributes: ['tvshow_name', 'tvshow_idea'],
         },
       ],
